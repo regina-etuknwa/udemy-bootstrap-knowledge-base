@@ -104,7 +104,7 @@
                         <h2 class="h3 mt-5 fst-italic" id="section-4">Article Subheading</h2>
                         <p>Phasellus ultrices velit mauris, tempor molestie eros lacinia non. Sed vitae lobortis ipsum. Curabitur nunc mi, tristique at nisl nec, vestibulum dictum est. Sed a metus posuere, accumsan massa et, pulvinar nibh. Sed vestibulum cursus odio nec sagittis. Maecenas condimentum est non ante mattis tincidunt. Aliquam condimentum ante porta euismod placerat. Maecenas non neque sit amet enim ornare mollis hendrerit id nibh.</p>
 							<pre>
-<code class="html hljs xml">&lt;div class="row flex-lg-row-reverse mt-4 mb-5"&gt;
+<code class="html">&lt;div class="row flex-lg-row-reverse mt-4 mb-5"&gt;
   &lt;div class="col-12 col-lg-6 mb-3 mb-lg-0"&gt;
     &lt;form&gt;
       &lt;div class="input-group input-group-lg"&gt;
@@ -250,8 +250,10 @@
 		</footer>
 		<script src="js/bootstrap.bundle.min.js"></script>
         <script src="./js/smooth-scroll.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
         <script>
             let scroll = new SmoothScroll('a[href*="#section"]');
+			hljs.highlightBlock(document.querySelector('pre code'));
         </script>
 	</body>
 </html>
